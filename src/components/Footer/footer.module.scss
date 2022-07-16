@@ -1,0 +1,5 @@
+@use "../../styles/variable";
+.footer {
+  background-color: variable.$primary_color1;
+  color: #fff;
+}

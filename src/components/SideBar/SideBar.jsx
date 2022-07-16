@@ -16,7 +16,6 @@ import Logo from '../Logo/Logo';
 const SideBar = () => {
     const { input_icon, best_topic_text, best_topic, drop_icon, sidebar, serch_input, magnifier, wrap_destination_input, wrap_keyword_input } = styles;
     return (
-
         <div className={sidebar}>
             <Logo />
             <div className={wrap_destination_input}>

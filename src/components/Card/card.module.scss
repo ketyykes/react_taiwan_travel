@@ -1,6 +1,6 @@
 @use "../../styles/variable";
 .card {
-  max-width: 300px;
+  margin: 12px;
   box-shadow: variable.$box_shadow1;
   border-radius: 16px;
   p {
@@ -18,11 +18,19 @@
   }
 }
 .wrap_information {
+  line-height: 20px;
+  font-size: variable.$font_body2;
+  color: variable.$secondary_text;
   img {
-    width: 18px;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
   }
 }
 .wrap_location {
 }
 .wrap_icon {
+}
+.wrap_clock {
+  // line-height: 20px;
 }

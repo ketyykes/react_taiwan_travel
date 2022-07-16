@@ -17,3 +17,7 @@
 .more_point {
   color: variable.$primary_color1;
 }
+.wrap_card {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,5 +1,5 @@
-@use "../../styles/mixin";
 @use "../../styles/variable";
+@use "../../styles/mixin";
 .sidebar {
   position: fixed;
   display: flex;
@@ -11,6 +11,10 @@
   padding: 8px 24px;
   height: 100vh;
   overflow: auto;
+  @include mixin.tablet {
+    position: static;
+    width: 100%;
+  }
 }
 .wrap_destination_input {
   text-align: center;

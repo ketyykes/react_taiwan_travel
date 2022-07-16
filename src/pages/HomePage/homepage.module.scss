@@ -1,6 +1,14 @@
+@use "../../styles/mixin";
 .homepage {
+  @include mixin.tablet {
+    display: flex;
+    flex-direction: column;
+  }
 }
-.wrap_baneer_content {
+.wrap_baneer_content_footer {
   margin-left: auto;
   width: calc(100vw - 350px);
+}
+
+@include mixin.tablet {
 }
