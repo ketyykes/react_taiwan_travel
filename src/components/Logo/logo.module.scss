@@ -1,0 +1,42 @@
+@use "../../styles/mixin";
+@use "../../styles/variable";
+.wrap_logo {
+  border-bottom: 0;
+  margin-bottom: 0px;
+  padding: 0;
+  @include mixin.tablet {
+    border-bottom: 1px solid #00000014;
+    margin-bottom: 8px;
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+  }
+}
+.logo {
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-bottom: 24px;
+  background: url("../../assets/images/logo.png");
+  height: 50px;
+  width: 120px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  @include mixin.tablet {
+    margin: 0 auto;
+    padding: 8px 0;
+    box-sizing: border-box;
+    // display: flex;
+  }
+}
+.wrap_toggle {
+  display: none;
+  @include mixin.tablet {
+    padding: 6px;
+    border-radius: 8px;
+    background-color: variable.$primary_color3;
+    display: block;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,28 @@
+@use "../../styles/variable";
+.card {
+  max-width: 300px;
+  box-shadow: variable.$box_shadow1;
+  border-radius: 16px;
+  p {
+    font-size: variable.$font_size3;
+    font-weight: 700;
+    margin: 8px;
+  }
+}
+.wrap_img {
+  img {
+    width: 100%;
+    object-fit: contain;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+  }
+}
+.wrap_information {
+  img {
+    width: 18px;
+  }
+}
+.wrap_location {
+}
+.wrap_icon {
+}

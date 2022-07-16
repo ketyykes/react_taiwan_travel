@@ -1,0 +1,19 @@
+@use "../../styles/variable";
+.theme_card {
+  margin: 24px;
+}
+.wrap_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  h2 {
+    display: flex;
+    align-items: center;
+    font-size: variable.$font_size3;
+    font-weight: 700;
+  }
+}
+.more_point {
+  color: variable.$primary_color1;
+}

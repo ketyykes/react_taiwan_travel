@@ -1,0 +1,22 @@
+@use "../../styles/variable";
+.banner {
+  margin: 24px;
+  box-shadow: variable.$box_shadow1;
+  border-radius: 16px;
+  h1 {
+    font-size: variable.$font_size1;
+    font-weight: 700;
+    padding-left: 40px;
+    line-height: 1.2;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrap_banner {
+  max-width: 500px;
+  img {
+    width: 100%;
+    object-fit: contain;
+  }
+}
