@@ -18,12 +18,33 @@
 }
 .wrap_destination_input {
   text-align: center;
+  .serch_input {
+    text-align: start;
+    background-color: #fff;
+
+    span {
+      color: rgb(117, 117, 117);
+    }
+  }
   position: relative;
   .drop_icon {
     color: variable.$primary_color1;
     cursor: pointer;
   }
   margin-bottom: 24px;
+}
+.destination_select {
+  display: flex;
+  justify-content: space-between;
+  button {
+    display: block;
+    padding: 8px 20px;
+    border: 1px solid;
+    font-size: variable.$font_desktop_body1;
+    border-radius: 8px;
+    border: solid 1px variable.$primary_color1;
+    background-color: #fff;
+  }
 }
 .wrap_keyword_input {
   position: relative;

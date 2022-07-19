@@ -13,10 +13,10 @@ const HomePage = () => {
             <SideBar />
             <div className={wrap_baneer_content_footer}>
                 <Banner />
-                <ThemeCard />
-                <ThemeCard />
-                <ThemeCard />
-                <ThemeCard />
+                <ThemeCard visitType={"ScenicSpot"} title="熱門景點" />
+                <ThemeCard visitType={"Activity"} title="觀光活動" />
+                <ThemeCard visitType={"Restaurant"} title="美食品嘗" />
+                <ThemeCard visitType={"Hotel"} title="住宿推薦" />
                 <Footer />
             </div>
         </div>

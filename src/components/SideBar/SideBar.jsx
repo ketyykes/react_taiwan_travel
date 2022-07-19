@@ -14,18 +14,32 @@ import sightseeing from '../../assets/images/best_theme/sightseeing.png';
 
 import Logo from '../Logo/Logo';
 const SideBar = () => {
-    const { input_icon, best_topic_text, best_topic, drop_icon, sidebar, serch_input, magnifier, wrap_destination_input, wrap_keyword_input } = styles;
+    const { destination_select, input_icon, best_topic_text, best_topic, drop_icon, sidebar, serch_input, magnifier, wrap_destination_input, wrap_keyword_input } = styles;
     return (
         <div className={sidebar}>
             <Logo />
             <div className={wrap_destination_input}>
-                <input className={serch_input} type="text" placeholder='目的地' />
+                <button className={serch_input}>
+                    <span>
+                        目的地
+                    </span>
+                </button>
+                {/* <input className={serch_input} type="text" placeholder='目的地' /> */}
                 <FontAwesomeIcon
                     size="xl"
                     icon={faCircleChevronDown}
                     className={`${drop_icon} ${input_icon}`}
                 />
             </div>
+            <div className={destination_select}>
+                <button>
+                    基隆
+                </button>
+                <button>
+                    台北
+                </button>
+            </div>
+
             <div className={wrap_keyword_input}>
                 <input className={serch_input} type="text" placeholder='搜尋關鍵字' />
                 <div className={`${magnifier} ${input_icon}`}></div>

@@ -10,15 +10,19 @@
   }
 }
 .wrap_img {
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
   img {
     width: 100%;
-    object-fit: contain;
+    height: 100%;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
   }
 }
 .wrap_information {
-  line-height: 20px;
+  padding: 16px;
+  line-height: 2.5;
   font-size: variable.$font_body2;
   color: variable.$secondary_text;
   img {
