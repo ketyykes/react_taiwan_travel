@@ -8,7 +8,9 @@
 .wrap_baneer_content_footer {
   margin-left: auto;
   width: calc(100vw - 350px);
-}
-
-@include mixin.tablet {
+  @include mixin.tablet {
+    width: 100%;
+    position: relative;
+    top: 70px;
+  }
 }

@@ -32,8 +32,14 @@
 }
 .wrap_toggle {
   display: none;
+  img {
+    height: 28px;
+    width: 28px;
+  }
   @include mixin.tablet {
     padding: 6px;
+    border: 0;
+    outline: none;
     border-radius: 8px;
     background-color: variable.$primary_color3;
     display: block;

@@ -1,7 +1,11 @@
 @use "../../styles/variable";
+@use "../../styles/mixin";
 .footer {
   background-color: variable.$primary_color1;
   color: #fff;
   padding: 8px;
   margin-left: 24px;
+  @include mixin.tablet {
+    margin-left: 0px;
+  }
 }

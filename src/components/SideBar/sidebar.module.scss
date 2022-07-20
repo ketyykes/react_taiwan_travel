@@ -11,17 +11,31 @@
   padding: 8px 24px;
   height: 100vh;
   overflow: auto;
+  position: absolute;
   @include mixin.tablet {
-    position: static;
     width: 100%;
+    // height: auto;
+    height: 100vh;
   }
+}
+.wrap_mobile_sidebar {
+  @include mixin.tablet {
+    max-height: 0;
+    overflow: hidden;
+    background-color: #fff;
+    z-index: 2;
+    width: 100%;
+    transition: max-height 0.5s;
+  }
+}
+.show_wrap_mobile_sidebar {
+  max-height: 100%;
 }
 .wrap_destination_input {
   text-align: center;
   .serch_input {
     text-align: start;
     background-color: #fff;
-
     span {
       color: rgb(117, 117, 117);
     }
@@ -33,10 +47,20 @@
   }
   margin-bottom: 24px;
 }
+
 .destination_select {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
+  flex-wrap: wrap;
+  position: absolute;
+  z-index: 2;
+  top: 130px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 2s;
+  background-color: rgb(255, 255, 255);
   button {
+    margin: 8px;
     display: block;
     padding: 8px 20px;
     border: 1px solid;
@@ -45,6 +69,10 @@
     border: solid 1px variable.$primary_color1;
     background-color: #fff;
   }
+}
+.show_select {
+  display: flex;
+  max-height: 100%;
 }
 .wrap_keyword_input {
   position: relative;
@@ -55,10 +83,15 @@
   position: absolute;
   color: variable.$primary_color1;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%) rotate(0deg);
+  transition: transform 0.5s;
   right: 14px;
   cursor: pointer;
 }
+.transform_icon {
+  transform: translateY(-50%) rotate(-180deg);
+}
+
 .serch_input {
   box-sizing: border-box;
   border: 1px solid variable.$line_color;
@@ -103,7 +136,8 @@
   li {
     display: flex;
     align-items: center;
-    width: 100px;
+    box-sizing: border-box;
+    width: 50%;
     flex-direction: column;
     padding: 8px;
     border: 1px solid rgba(255, 255, 255, 0);
